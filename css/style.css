@@ -96,8 +96,8 @@ header {
 
 header .menu {
   position: absolute;
-  max-width: 941px;
   width: 100%;
+  max-width: 941px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,14 +132,15 @@ a:hover {
 }
 
 .info .info-colums {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
-  padding: 0 150px 0 150px;
+  max-width: 941px;
 }
 
 .info .name {
