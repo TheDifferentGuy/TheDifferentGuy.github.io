@@ -8,10 +8,12 @@ header{
    justify-content: center;
    
    .menu{
-      width: 941px;
+      position: absolute;
+      max-width: 941px;
+      width: 100%;
       display: flex;
-      justify-content: space-evenly;
-      padding: 33px;
+      justify-content: space-between;
+      padding: 33px 0 33px;
       font-size: 18px;
       border-bottom: 1px solid #828282;
    }
@@ -25,4 +27,48 @@ a{
       color: black;
    }
 
+}
+
+.info{
+      height: 189px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      
+      .info-colums{
+         display: flex;
+         justify-content: space-evenly;
+         width: 100%;
+         padding: 0 150px 0 150px;
+      }
+      
+      .name{
+         font-family: 'Gilroy-Bold', sans-serif;
+         font-size: 48px;
+         line-height: 59px;
+         padding: 39px 0 0  ;
+      }
+      .person_info{
+         font-family: 'Gilroy-Medium';
+         line-height: 22px;
+         padding: 95px 0 0;
+         
+      }
+      .lang{
+         font-family: 'Gilroy-Bold';
+         padding-bottom: 20px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         transform: rotate(180deg);
+         writing-mode: tb-rl;
+         
+         
+      }
+}
+
+.big-img{
+   width: 100%;
+   display: flex;
+   justify-content: center;
 }
