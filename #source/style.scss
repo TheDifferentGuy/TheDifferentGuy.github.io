@@ -72,4 +72,79 @@ a{
    width: 100%;
    display: flex;
    justify-content: center;
+   img{
+      max-width: 944px;
+   }
+}
+
+
+.about{
+   width: 100%;
+   height: 506px;
+   margin: 104px 0 0 0 ;
+   background-color:#F6F6F6;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   .about_title{
+      font-family: 'Gilroy-Bold';
+      font-size: 34px;
+      line-height: 42px;
+      margin: 120px 0 18px 0;
+   }
+   .rows_info{
+      font-family: 'Gilroy-Medium';
+      font-size: 18px;
+      line-height: 22px;
+      p{
+         margin: 0 0 45px 0;
+      }
+   }
+}
+
+.skills{
+   padding: 91px 0 0 0;
+   .skills__header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .skills__title{
+         font-family: 'Gilroy-Bold';
+         font-size: 34px;
+         line-height: 42px;
+         text-align: center;
+      }
+      .skills__text{
+         margin: 69px 0 0 0;
+         font-family: 'Gilroy-Medium';
+         font-size: 18px;
+         line-height: 22px;
+         text-align: center;
+      }
+   }
+   .programs__colums{
+      margin: 84px 0 0 0;
+      font-family: 'Gilroy-Bold';
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+      
+      .title{
+         margin: 24px 0 0 0;
+      }
+      
+      img{
+         width: 89px;
+         height: 88px;;
+      }
+      .stars{
+         img{
+            width: 26px;
+            height: 26px;
+         }
+      }
+   }
 }
