@@ -5,142 +5,33 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
-   <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
    <title>My first page</title>
 </head>
 <body>
-   <div class="wrapper">
+<div class="wrapper">
    <header class="header">
-      <div class="menu">
-         <div class="home__btn">
-            <a href="#">Home</a>
-         </div>
-         <div class="about__mebtn">
-            <a href="#">About me</a>
-         </div>
-         <div class="skills__btn">
-            <a href="#">Skills</a>
-         </div>
-         <div class="portfolio__btn">
-            <a href="#">Portfolio</a>
-         </div>
-         <div class="contacts__btn">
-            <a href="#">Contacts</a>
+      <div class="header__content _container">
+         <div class="header__menu menu">
+            <div class="menu__icon icon-menu">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <nav class="menu__body">
+               <ul class="menu__list">
+                  <li><a data-goto=".page__home" href="" class="menu__link">Home</a></li>
+                  <li><a data-goto=".page__about-me" href="" class="menu__link">About me</a></li>
+                  <li><a data-goto=".page__skills" href="" class="menu__link">Skills</a></li>
+                  <li><a data-goto=".page__portfolio" href="" class="menu__link">Portfolio</a></li>
+                  <li><a data-goto=".page__contacts" href="" class="menu__link">Contacts</a></li>
+               </ul>
+            </nav>
          </div>
       </div>
    </header>
 
-   <div class="info">
-      <div class="info-colums">
-         <div class="name">
-            <p> Denis <br>
-            Novik</p>
-         </div>
-         <div class="person_info">
-            <p> UX | UI designer <br>
-            24 years old, Minsk</p>
-         </div>
-         <div class="lang">
-            <div class="lang-ru">
-               <a href="#">RU</a>
-            </div>
-            <div class="probel">
-               <p>|</p>
-            </div>
-            <div class="lang-eng">
-               <a href="#">ENG</a>
-            </div>
-         </div>
-      </div>
-   </div>
+</div>
 
-   <div class="big-img">
-      <div class="img">
-      <img src="img/BSPP2266.png" alt="">
-      </div>
-   </div>
-
-   <div class="about">
-      <div class="about_title">
-         <p>About me</p> 
-      </div>
-      <div class="rows_info">
-         <p>Hi, I'm Denis – UX/UI designer from Minsk. <br>I'm interested in design and everything connected with it.</p>
-         <p>I'm studying at courses "Web and mobile design <br> interfaces" in IT-Academy.</p>
-         <p>Ready to implement excellent projects <br> with wonderful people.</p>
-      
-      </div>
-   </div>
-
-   <div class="skills">
-      <div class="skills__header">
-         <div class="skills__title">
-            <p>Skills</p>
-         </div>
-         <div class="skills__text">
-            <p>I work in such programs as</p>
-         </div>
-      </div>
-
-      <div class="programs__colums">
-         <div class="photoshop">
-            <div class="img">
-               <img src="img/Photoshop_icon.png" alt="">
-            </div>
-            <div class="title">
-               <p>Adobe <br> 
-                  Photoshop</p>
-            </div>
-            <div class="stars">
-               <div class="first__star">
-                  <img src="img/Star.png" alt="">
-               </div>
-               <div class="second__star">
-                  <img src="img/Star.png" alt="">
-               </div>
-               <div class="third__star">
-                  <img src="img/Star.png" alt="">
-               </div>
-               <div class="fourth__star">
-                  <img src="img/Star.png" alt="">
-               </div>
-               <div class="fifth__star">
-                  <img src="img/Star-1.png" alt="">
-               </div>
-            </div>
-         </div>
-         <div class="illustrator">
-            <div class="img">
-               <img src="img/Illustrator_icon.png" alt="">
-            </div>
-            <div class="title">
-               <p>Adobe <br> 
-                  Illustrator</p>
-            </div>
-            <div class="stars"></div>
-         </div>
-         <div class="after-effects">
-            <div class="img">
-               <img src="img/After_Effects_icon.png" alt="">
-            </div>
-            <div class="title">
-               <p>Adobe <br>
-                  After Effects</p>
-            </div>
-            <div class="stars"></div>
-         </div>
-         <div class="figma">
-            <div class="img">
-               <img src="img/figma_icon.png" alt="">
-            </div>
-            <div class="title">
-               <p>Figma</p>
-            </div>
-            <div class="stars"></div>
-         </div>
-      </div>
-   </div>
-
-   </div>
+<script src="js/main.js"></script>
 </body>
 </html>
