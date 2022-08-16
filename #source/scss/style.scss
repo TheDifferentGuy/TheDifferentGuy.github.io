@@ -75,8 +75,6 @@ a {
 
 .menu{
    &__icon{
-      
-
    }
 }
 
@@ -98,26 +96,7 @@ a {
    }
 
 
-._active{
-   @media(max-width: $mobile){
-      transform: translate(0px, 0px);
-      
-      span {
-            transform: scale(0);
-         }
-      
-         &::before {
-            transform: rotate(-45deg);
-            top: calc(50% - 2.6px);
-         }
-      
-         &::after {
-            transform: rotate(45deg);
-            top: calc(50% - 2.6px);
-         }
-      
-   }
-}
+
 
 
 ._lock{
@@ -190,21 +169,31 @@ a {
             top: calc(50% - 2.6px);
          }
 
-      ._menu-open{
-         span{
-            transform: scale(0);
-         }
-         &::before{
-            transform: rotate(-45deg);
-            top: calc(50% - 2.6px);
+
+   }
+}
+
+._active {
+   @media(max-width: $mobile) {
+      transform: translate(0px, 0px);
+   }
+}
+
+._menu-open{
+   span{
+         transform: scale(0);
+      }
+   &::before{
+         transform: rotate(-45deg);
+         top: calc(50% - 2.6px);
          }
          &::after{
             transform: rotate(45deg);
             top: calc(50% - 2.6px);
          }
       }
-   }
-}
+
+
 
 
 //</HEADER>

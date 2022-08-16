@@ -177,27 +177,6 @@ a:hover {
   }
 }
 
-@media (max-width: 480px) {
-  .menu ._active {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
-  .menu ._active span {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  .menu ._active::before {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    top: calc(50% - 2.6px);
-  }
-  .menu ._active::after {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: calc(50% - 2.6px);
-  }
-}
-
 .menu ._lock {
   overflow: hidden;
 }
@@ -273,18 +252,28 @@ a:hover {
   .icon-menu span {
     top: calc(50% - 2.6px);
   }
-  .icon-menu ._menu-open span {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+}
+
+@media (max-width: 480px) {
+  ._active {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
-  .icon-menu ._menu-open::before {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    top: calc(50% - 2.6px);
-  }
-  .icon-menu ._menu-open::after {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: calc(50% - 2.6px);
-  }
+}
+
+._menu-open span {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+._menu-open::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: calc(50% - 2.6px);
+}
+
+._menu-open::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: calc(50% - 2.6px);
 }
