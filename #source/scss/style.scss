@@ -95,13 +95,9 @@ a {
       }
    }
 
-
-
-
-
-._lock{
-   overflow: hidden;
-}
+   ._lock{
+      overflow: hidden;
+   }
 
    &__list {
       height: 88px;
@@ -168,8 +164,6 @@ a {
          span{
             top: calc(50% - 2.6px);
          }
-
-
    }
 }
 
@@ -192,8 +186,5 @@ a {
             top: calc(50% - 2.6px);
          }
       }
-
-
-
 
 //</HEADER>
