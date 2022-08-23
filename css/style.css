@@ -105,6 +105,10 @@ body {
   font-weight: 700;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 .wrapper {
   width: 100%;
   max-width: 100%;
@@ -160,69 +164,12 @@ a:hover {
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
-  .menu__body {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    padding: 66px 150px 351px 26px;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-    -webkit-transform: translate(-100%, 0px);
-            transform: translate(-100%, 0px);
-    overflow: auto;
-  }
-}
-
-.menu ._lock {
-  overflow: hidden;
-}
-
-.menu__list {
-  height: 88px;
-  padding: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #828282;
-}
-
-@media (max-width: 480px) {
-  .menu__list {
-    border-bottom: none;
-    display: block;
-  }
-  .menu__list:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.menu__list li {
-  font-size: 18px;
-}
-
-@media (max-width: 480px) {
-  .menu__list li {
-    font-size: 34px;
-    margin: 0 0 30px 0;
-  }
-}
-
-.icon-menu {
+.menu__icon {
   display: none;
 }
 
 @media (max-width: 480px) {
-  .icon-menu {
+  .menu__icon {
     display: block;
     position: absolute;
     top: 68px;
@@ -233,47 +180,98 @@ a:hover {
     z-index: 5;
     background: none;
   }
-  .icon-menu span, .icon-menu::before, .icon-menu::after {
-    content: "";
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+  .menu__icon span {
+    top: calc(50% - 2.6px);
     left: 0px;
     position: absolute;
     width: 100%;
     height: 6px;
     background-color: #000;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
-  .icon-menu::before {
-    top: 0px;
+  .menu__icon span:first-child {
+    top: 0;
   }
-  .icon-menu::after {
-    bottom: 0px;
+  .menu__icon span:last-child {
+    top: auto;
+    bottom: 0;
   }
-  .icon-menu span {
+  .menu__icon._active span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .menu__icon._active span:first-child {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: calc(50% - 2.6px);
   }
+  .menu__icon._active span:last-child {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: calc(50% - 2.6px);
+  }
+}
+
+.menu__body {
+  padding: 33px 0 32px 0;
+  border-bottom: 1px solid #828282;
 }
 
 @media (max-width: 480px) {
-  ._active {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
+  .menu__body {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    border-bottom: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    overflow: auto;
   }
 }
 
-._menu-open span {
-  -webkit-transform: scale(0);
-          transform: scale(0);
+.menu__body._active {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
-._menu-open::before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: calc(50% - 2.6px);
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-._menu-open::after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: calc(50% - 2.6px);
+@media (max-width: 480px) {
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .menu__list:last-child {
+    margin: 0 0 200px 0;
+  }
+}
+
+.menu__link {
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .menu__link {
+    display: block;
+    font-size: 34px;
+    margin: 68px 0 0 26px;
+  }
 }
