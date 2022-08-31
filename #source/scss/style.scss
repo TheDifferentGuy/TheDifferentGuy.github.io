@@ -74,7 +74,7 @@ a {
 .menu {
    &__icon{
       display: none;
-         @media (max-width: $mobile) {
+         @media (max-width: $tablet) {
             display: block;
             position: absolute;
             top: 68px;
@@ -121,7 +121,7 @@ a {
    &__body {
       padding: 33px 0 32px 0;
       border-bottom: 1px solid #828282;
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
          position: absolute;
          bottom: 100%;
          left: 0;
@@ -143,7 +143,7 @@ a {
    &__list {
       display: flex;
       justify-content: space-between;
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
          flex-direction: column;
          gap: 0;
          &:last-child {
@@ -155,7 +155,7 @@ a {
 
    &__link {
       font-size: 18px;
-         @media (max-width: $mobile) {
+         @media (max-width: $tablet) {
             display: block;
             font-size: 34px;
             margin: 68px 0 0 26px;
