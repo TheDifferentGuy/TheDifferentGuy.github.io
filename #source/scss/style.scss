@@ -32,7 +32,6 @@ body{
 //<БАЗОВЫЕ ЭЛЕМЕНТЫ>
 ._container{
    max-width: $maxWidthContainer + px;
-   margin: 0 auto;
    @media (max-width: $screen){
       max-width: 750px;
    }
@@ -74,7 +73,7 @@ a {
 .menu {
    &__icon{
       display: none;
-         @media (max-width: $tablet) {
+         @media (max-width: $mobile) {
             display: block;
             position: absolute;
             top: 68px;
@@ -121,7 +120,7 @@ a {
    &__body {
       padding: 33px 0 32px 0;
       border-bottom: 1px solid #828282;
-      @media (max-width: $tablet) {
+      @media (max-width: $mobile) {
          position: absolute;
          bottom: 100%;
          left: 0;
@@ -133,6 +132,7 @@ a {
          display: flex;
          transition: all 2s;
          overflow: auto;
+         flex-direction: column;
       }
       &._active{
          transform: translateY(100%);
@@ -143,7 +143,8 @@ a {
    &__list {
       display: flex;
       justify-content: space-between;
-      @media (max-width: $tablet) {
+      @media (max-width: $mobile) {
+         justify-content: flex-start;
          flex-direction: column;
          gap: 0;
          &:last-child {
@@ -155,11 +156,22 @@ a {
 
    &__link {
       font-size: 18px;
-         @media (max-width: $tablet) {
+         @media (max-width: $mobile) {
             display: block;
             font-size: 34px;
             margin: 68px 0 0 26px;
          }
+   }
+
+   &__transnav{
+      display: none;
+      @media (max-width: $mobile) {
+         display: flex;
+         font-size: 34px;
+         line-height: 42px;
+         writing-mode: vertical-rl;
+         margin: 0 28px 57px 0;
+      }
    }
 }
 
@@ -177,10 +189,14 @@ a {
    display: flex;
    justify-content: center;
 
+   @media (max-width: $mobile) {
+      padding: 65px 0 0 0;
+      display: block;
+
+   }
    &__content {
       max-width: $screen;
       padding: 0px 10px;
-      margin: 0 auto;
    }
 
    &__body {}
@@ -189,6 +205,12 @@ a {
       position: relative;
       display: flex;
       justify-content: space-between;
+      @media (max-width: $mobile) {
+         display: flex;
+         flex-direction: column;
+         padding: 0 0 0 28px;
+
+      }
    }
 
    &__name {
@@ -203,6 +225,9 @@ a {
       font-weight: 500;
       font-size: 18px;
       line-height: 22px;
+      @media (max-width: $mobile) {
+         padding: 23px 0 0 0;
+      }
    }
 
    &__lang{
@@ -211,10 +236,19 @@ a {
       justify-content: center;
       transform: rotate(180deg);
       writing-mode: tb-rl;
+      @media (max-width: $mobile) {
+         display: none;
+      }
    }
 
    &__big-img{
+      position: relative;
       padding: 49px 0 0 0;
+      @media (max-width: $mobile) {
+      padding: 37px 0 0 0;
+      display: flex;
+      justify-content: center;
+      }
    }
 }
 
