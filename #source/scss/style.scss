@@ -253,5 +253,38 @@ a {
 }
 
 
+.about-me {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   margin: 105px 0 0 0 ;
+   background-color: #F6F6F6;
+   display: flex;
+   justify-content: center;
+   &__content {
+      max-width: $screen;
+      padding: 0px 10px;
+   }
+
+   &__body {}
+
+   &__description {
+   }
+
+   &__title {
+      text-align: center;
+      font-size: 34px;
+      line-height: 42px;
+   }
+
+   &__info {}
+}
+
+
+
+
+
+
 
 //</BODY>
