@@ -26,9 +26,9 @@ anchors.forEach(anchor => {
    anchor.addEventListener('click', event => {
       event.preventDefault()
 
-      const blokID = anchor.getAttribute('href').substring(1)
+      const bloсkID = anchor.getAttribute('href').substring(1)
 
-      document.getElementById(blockID).scrollIntoView({
+      document.getElementById(bloсkID).scrollIntoView({
          behavior: 'smooth',
          block: 'start'
       })

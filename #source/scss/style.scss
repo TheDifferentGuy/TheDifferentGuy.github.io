@@ -262,6 +262,8 @@ a {
    background-color: #F6F6F6;
    display: flex;
    justify-content: center;
+   text-align: center;
+
    &__content {
       max-width: $screen;
       padding: 0px 10px;
@@ -270,16 +272,121 @@ a {
    &__body {}
 
    &__description {
+      margin: 120px 0 0 0;
    }
 
    &__title {
       text-align: center;
       font-size: 34px;
       line-height: 42px;
+      margin: 0 0 18px 0;
    }
 
-   &__info {}
+   &__info {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      p{
+         margin: 0 0 45px 0;
+      }
+      &:last-child{
+         margin: 0 0 62px 0;
+      }
+   }
 }
+
+
+
+
+.skills {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   margin: 40px 0 0 0 ;
+   
+
+   &__content {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      max-width: $screen;
+      padding: 0px 10px;
+   }
+
+   &__body {
+
+   }
+
+   &__description {
+
+      
+   }
+
+
+   &__title {
+      font-size: 34px;
+      line-height: 42px;
+   }
+
+   &__mixing {
+      font-size: 18px;
+      line-height: 22px;
+   }
+
+   &__programs-colums {
+      display: flex;
+      justify-content: space-between; 
+   }
+
+   &__photoshop {}
+
+   &__illustrator {}
+
+   &__after-effects {}
+
+   &__figma {}
+
+   .img {
+      width: 89px;
+      height: 88px;
+   }
+   
+   .title {}
+   
+   .stars {}
+   
+   .first {
+   
+      &__star {}
+   }
+   
+   .second {
+   
+      &__star {}
+   }
+   
+   .third {
+   
+      &__star {}
+   }
+   
+   .fourth {
+   
+      &__star {}
+   }
+   
+   .fifth {
+   
+      &__star {}
+   }
+}
+
+
+
+
+
 
 
 
