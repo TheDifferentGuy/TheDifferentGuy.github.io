@@ -186,17 +186,16 @@ a {
    left: 0;
    width: 100%;
    padding: 40px 0 0 0 ;
-   display: flex;
-   justify-content: center;
+   
 
    @media (max-width: $mobile) {
       padding: 65px 0 0 0;
       display: block;
-
    }
    &__content {
       max-width: $screen;
       padding: 0px 10px;
+      margin: 0 auto;
    }
 
    &__body {}
@@ -261,18 +260,18 @@ a {
    margin: 105px 0 0 0 ;
    background-color: #F6F6F6;
    display: flex;
-   justify-content: center;
    text-align: center;
 
    &__content {
       max-width: $screen;
       padding: 0px 10px;
+      margin: 0 auto;
    }
 
    &__body {}
 
    &__description {
-      margin: 120px 0 0 0;
+      margin: 120px 0 107px 0;
    }
 
    &__title {
@@ -290,9 +289,6 @@ a {
       p{
          margin: 0 0 45px 0;
       }
-      &:last-child{
-         margin: 0 0 62px 0;
-      }
    }
 }
 
@@ -301,26 +297,24 @@ a {
 
 .skills {
    position: relative;
-   top: 0;
-   left: 0;
-   width: 100%;
-   margin: 40px 0 0 0 ;
-   
-
+      top: 0;
+      left: 0;
+      width: 100%;
    &__content {
-      display: flex;
-      justify-content: center;
-      text-align: center;
       max-width: $screen;
       padding: 0px 10px;
+      margin: 0 auto;
+      
    }
 
    &__body {
-
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      margin: 91px 0 111px 0;
    }
 
    &__description {
-
       
    }
 
@@ -331,31 +325,63 @@ a {
    }
 
    &__mixing {
+      font-weight: 500;
+      margin: 69px 0 0 0;
       font-size: 18px;
       line-height: 22px;
    }
 
    &__programs-colums {
       display: flex;
-      justify-content: space-between; 
+      justify-content: space-between;
+      margin: 83px 0 0 0;
+      :first-child{
+         margin-top: 0;
+      }
+      :last-child{
+         margin-bottom: 0;
+      }
+      .img {
+            margin: 0 auto;
+            width: 89px;
+            height: 88px;
+         }
+      
+      .title {
+         margin: 25px 0 40px 0;
+         font-size: 14px;
+         line-height: 17px;
+      }
+      
+      .stars {
+         display: flex;
+         justify-content: space-evenly;
+         .img{
+            width: 26px;
+            height: 26px;
+         }
+      }
+      
    }
 
-   &__photoshop {}
-
-   &__illustrator {}
-
-   &__after-effects {}
-
-   &__figma {}
-
-   .img {
-      width: 89px;
-      height: 88px;
+   &__photoshop {
+      width: 167px;
    }
+
+   &__illustrator {
+      width: 167px;
+   }
+
+   &__after-effects {
+      width: 167px;
+   }
+
+   &__figma {
+      width: 167px;
+   }
+
    
-   .title {}
    
-   .stars {}
    
    .first {
    

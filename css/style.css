@@ -306,12 +306,6 @@ a:hover {
   left: 0;
   width: 100%;
   padding: 40px 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media (max-width: 480px) {
@@ -324,6 +318,7 @@ a:hover {
 .main-block__content {
   max-width: 956px;
   padding: 0px 10px;
+  margin: 0 auto;
 }
 
 .main-block__description {
@@ -417,19 +412,17 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
 }
 
 .about-me__content {
   max-width: 956px;
   padding: 0px 10px;
+  margin: 0 auto;
 }
 
 .about-me__description {
-  margin: 120px 0 0 0;
+  margin: 120px 0 107px 0;
 }
 
 .about-me__title {
@@ -450,28 +443,29 @@ a:hover {
   margin: 0 0 45px 0;
 }
 
-.about-me__info:last-child {
-  margin: 0 0 62px 0;
-}
-
 .skills {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  margin: 40px 0 0 0;
 }
 
 .skills__content {
+  max-width: 956px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+.skills__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
-  max-width: 956px;
-  padding: 0px 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 91px 0 111px 0;
 }
 
 .skills__title {
@@ -480,6 +474,8 @@ a:hover {
 }
 
 .skills__mixing {
+  font-weight: 500;
+  margin: 69px 0 0 0;
   font-size: 18px;
   line-height: 22px;
 }
@@ -491,9 +487,55 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 83px 0 0 0;
 }
 
-.skills .img {
+.skills__programs-colums :first-child {
+  margin-top: 0;
+}
+
+.skills__programs-colums :last-child {
+  margin-bottom: 0;
+}
+
+.skills__programs-colums .img {
+  margin: 0 auto;
   width: 89px;
   height: 88px;
+}
+
+.skills__programs-colums .title {
+  margin: 25px 0 40px 0;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.skills__programs-colums .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.skills__programs-colums .stars .img {
+  width: 26px;
+  height: 26px;
+}
+
+.skills__photoshop {
+  width: 167px;
+}
+
+.skills__illustrator {
+  width: 167px;
+}
+
+.skills__after-effects {
+  width: 167px;
+}
+
+.skills__figma {
+  width: 167px;
 }
