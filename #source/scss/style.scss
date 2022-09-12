@@ -293,8 +293,6 @@ a {
 }
 
 
-
-
 .skills {
    position: relative;
       top: 0;
@@ -312,6 +310,7 @@ a {
       text-align: center;
       flex-direction: column;
       margin: 91px 0 111px 0;
+      
    }
 
    &__description {
@@ -335,12 +334,12 @@ a {
       display: flex;
       justify-content: space-between;
       margin: 83px 0 0 0;
-      :first-child{
-         margin-top: 0;
-      }
-      :last-child{
-         margin-bottom: 0;
-      }
+      @media (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+      
       .img {
             margin: 0 auto;
             width: 89px;
@@ -348,7 +347,7 @@ a {
          }
       
       .title {
-         margin: 25px 0 40px 0;
+         margin: 25px 0 42px 0;
          font-size: 14px;
          line-height: 17px;
       }
@@ -370,50 +369,92 @@ a {
 
    &__illustrator {
       width: 167px;
+      @media (max-width: $mobile) {
+            margin: 82px 0 0 0;
+         }
    }
 
    &__after-effects {
       width: 167px;
+      @media (max-width: $mobile) {
+            margin: 82px 0 0 0;
+         }
    }
 
    &__figma {
       width: 167px;
-   }
-
-   
-   
-   
-   .first {
-   
-      &__star {}
-   }
-   
-   .second {
-   
-      &__star {}
-   }
-   
-   .third {
-   
-      &__star {}
-   }
-   
-   .fourth {
-   
-      &__star {}
-   }
-   
-   .fifth {
-   
-      &__star {}
+      .stars{
+         margin: 59px 0 0 0;
+      }
+      @media (max-width: $mobile) {
+         margin: 82px 0 0 0;
+      }
    }
 }
 
 
 
 
+.portfolio {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: #F6F6F6;
 
+   &__content {
+      max-width: $screen;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
 
+   &__body {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      padding: 112px 0 0 0;
+   }
+
+   &__title {
+      font-size: 34px;
+      line-height: 42px;
+   }
+
+   &__list {
+      margin: 47px 0 0 0;
+      font-weight: 500;
+   }
+
+   &__fashion-store {
+
+   }
+   
+   &__reebok-store {}
+   
+   &__braun-landing {
+      
+   }
+
+   .img{
+      margin: 0 0 45px 0;
+   }
+
+   img{
+      @media (max-width: $tablet) {
+            object-fit: contain;
+         }
+   }
+   
+   .link {
+      margin: 0 0 99px 0;
+      a{
+         text-decoration: underline;
+         transition: none !important;
+         color: black;
+      }
+   }
+}
 
 
 
