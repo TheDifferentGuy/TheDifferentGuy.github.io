@@ -709,6 +709,12 @@ a:hover {
   color: #000;
 }
 
+@media (max-width: 768px) {
+  .footer__button {
+    padding: 0 97px;
+  }
+}
+
 .footer__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
