@@ -456,6 +456,87 @@ a {
    }
 }
 
+.footer {
+   position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+   &__content {
+      max-width: $screen;
+      padding: 0px 10px;
+      margin: 0 auto;
+   }
+
+   &__top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 114px 0 0 0;
+   }
+
+   &__title {
+      font-size: 34px;
+      line-height: 42px;
+      margin: 0 0 20px 0;
+   }
+
+   &__top-text {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-weight: 500;
+      margin: 0 0 30px 0;
+   }
+
+   &__button {
+      margin: 0 0 86px 0;
+      font-size: 18px;
+      line-height: 22px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: 42px;
+      padding: 0px 30px;
+      border-radius: 50px;
+      position: relative;
+      top: 0;
+      background-color: black;
+      color: #fff;
+      border-color: #000;
+      transition: all 1s ease-in-out 0s;
+      &:hover{
+         background-color: #fff;
+         color: #000;
+      }
+   }
+
+   &__bottom {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__link {
+      display: flex;
+      justify-content: space-evenly;
+      img{
+         width: 40px;
+         height: 40px;
+      }
+      margin: 0 0 46px 0;
+   }
+
+   &__bottom-text {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-weight: 500;
+      color: #828282;
+      margin: 0 0 124px 0;
+   }
+}
+
 
 
 
